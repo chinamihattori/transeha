@@ -205,6 +205,10 @@ div.ccm-page .h6 {
     font-weight: 600;
   }
 
+  div.ccm-page h3 small {
+    font-size: 14px;
+  }
+
   div.ccm-page h4,
   div.ccm-page .h4 {
     font-size: 18px;
@@ -419,6 +423,14 @@ div.ccm-page #main-section p {
 
 div.ccm-page #main-section img {
   width: 100%;
+}
+div.ccm-page #main-section p > a {
+  text-decoration: underline;
+  color: #563f05;
+}
+div.ccm-page #main-section p > a:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 /* a
@@ -1737,7 +1749,7 @@ div.ccm-page .btn-transparent:hover {
 }
 
 .gnavi__list {
-  width: 14%;
+  width: 17%;
   height: 40px;
   padding-bottom: 0;
   background-color: var(--dark);
@@ -1748,19 +1760,19 @@ div.ccm-page .btn-transparent:hover {
 
 @media only screen and (max-width: 1700px) {
   .gnavi__list {
-    width: 15%;
+    width: 18%;
   }
 }
 
 @media only screen and (max-width: 1600px) {
   .gnavi__list {
-    width: 15%;
+    width: 18%;
   }
 }
 
 @media only screen and (max-width: 1500px) {
   .gnavi__list {
-    width: 17%;
+    width: 22.5%;
   }
 }
 
@@ -1822,7 +1834,6 @@ div.ccm-page .btn-transparent:hover {
   height: 1px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background: var(--ocher);
   background: var(--background);
   bottom: -5px;
   transform: scale(0, 1);
@@ -1837,6 +1848,10 @@ div.ccm-page .btn-transparent:hover {
   transform: scale(1, 1);
   transform-origin: left top;
 }
+/* .gnavi__list > a.active::after {
+  transform: scale(1, 1);
+  transform-origin: left top;
+} */
 
 .gnavi__list a:hover {
   color: #fff;
@@ -2747,14 +2762,15 @@ div.ccm-page .media-member {
   border: 1px solid #000;
   /* border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc; */
-  margin: 1em 0;
+  margin: 1.7em 0;
   transition: .5s;
+  background: #f9f9f9;
 }
 /* div.ccm-page .media-member:hover {
   background-color: #fff;
 } */
 div.ccm-page .media-member .body {
-  padding: 1em;
+  padding: 1.2em;
 }
 
 .media-member .body .hdg {
@@ -2780,15 +2796,14 @@ div.ccm-page .media-member .body {
   font-size: 14px;
   margin-bottom: 0;
   color: #563f05;
-  text-decoration: none;
+  text-decoration: underline;
+  /* text-decoration: none; */
 }
 .media-member .body .link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #000
 }
-.media-member .body .link {
-  font-size: 14px;
-  margin-bottom: 0;
-}
+
 .media-member .body .more {
   margin-bottom: 0!important;
 }
