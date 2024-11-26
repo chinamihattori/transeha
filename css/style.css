@@ -577,7 +577,7 @@ div.ccm-page #bottom-footer .logo {
   }
 
   div.ccm-page #main-header-home {
-    margin-top: 87px;
+    margin-top: 85px;
     min-height: 148px;
   }
 
@@ -978,6 +978,7 @@ div.ccm-page .news {
 div.ccm-page .news .day {
   color: var(--dark);
   font-size: 1.1em;
+  font-weight: 500;
 }
 
 div.ccm-page .news .label {
